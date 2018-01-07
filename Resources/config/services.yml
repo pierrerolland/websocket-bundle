@@ -1,0 +1,6 @@
+services:
+    RollandRock\WebsocketBundle\Handler\HandlerRegistry: ~
+    RollandRock\WebsocketBundle\Websocket:
+        arguments:
+            - "@RollandRock\\WebsocketBundle\\Handler\\HandlerRegistry"
+            - "%rr_ws_client%"
