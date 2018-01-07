@@ -26,7 +26,6 @@ class Websocket implements MessageComponentInterface
         $this->clientStack = new ClientStack();
         $this->handlerRegistry = $handlerRegistry;
         $this->clientClass = $clientClass;
-        echo $this->handlerRegistry->getHandler('welcome')::getName();
     }
 
     public function onOpen(ConnectionInterface $conn)
