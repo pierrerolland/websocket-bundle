@@ -1,6 +1,9 @@
 services:
+    RollandRock\WebsocketBundle\Handler\HandlerRegistry:
+        autoconfigure: true
     RollandRock\WebsocketBundle\Handler\HandlerRegistry: ~
     RollandRock\WebsocketBundle\Websocket:
+        public: true
+        autowire: true
         arguments:
-            - "@RollandRock\\WebsocketBundle\\Handler\\HandlerRegistry"
-            - "%rr_ws_client%"
+            $clientClass: "%rr_ws_client%"
