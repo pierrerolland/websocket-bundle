@@ -1,5 +1,5 @@
 services:
-    RollandRock\WebsocketBundle\Handler\HandlerRegistry:
+    RollandRock\WebsocketBundle\Command\ServerCommand:
         autoconfigure: true
     RollandRock\WebsocketBundle\Handler\HandlerRegistry: ~
     RollandRock\WebsocketBundle\Websocket:
