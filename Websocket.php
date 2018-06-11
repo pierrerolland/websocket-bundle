@@ -30,7 +30,7 @@ class Websocket implements MessageComponentInterface
 
     public function onOpen(ConnectionInterface $conn)
     {
-        $this->clientStack->addClient(new ${$this->clientClass}($conn));
+        $this->clientStack->addClient(new $this->clientClass($conn));
     }
 
     public function onMessage(ConnectionInterface $from, $msg)
