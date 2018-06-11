@@ -28,6 +28,11 @@ class ClientStack
         unset($this->clients[$this->getClientIndex($connection)]);
     }
 
+    public function getClients(): array
+    {
+        return $this->clients;
+    }
+
     private function getClientIndex(ConnectionInterface $connection): int
     {
         foreach ($this->clients as $i => $c) {
