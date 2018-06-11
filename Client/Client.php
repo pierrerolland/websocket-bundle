@@ -7,7 +7,7 @@ use Ratchet\ConnectionInterface;
 /**
  * @author Pierre Rolland <roll.pierre@gmail.com>
  */
-class Client
+class Client implements ClientInterface
 {
     /** @var ConnectionInterface */
     protected $connection;
